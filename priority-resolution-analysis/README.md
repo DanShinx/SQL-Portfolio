@@ -35,11 +35,17 @@ This project uses **DuckDB** to execute analytical SQL directly on CSV files
 ### Prerequisites
 - DuckDB installed locally
 
-### Install DuckDB
+Installation instructions:
+https://duckdb.org/docs/installation/
 
-**macOS**
-```bash
-brew install duckdb
+### Run the analysis
+From the project root:
 
+## Priority Cycle Time Analysis
+cd priority-resolution-analysis
+duckdb
+.read SQL/priority_cycle_time.sql
+
+### Author information
 Author: Daniel Longman
 Last Update: 2025-12-26 [2026-01-02]
