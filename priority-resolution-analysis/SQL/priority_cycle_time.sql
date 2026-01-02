@@ -3,7 +3,7 @@ WITH base AS (
         issue_id,
         priority,
         CAST(resolved_at AS DATE) - CAST(created_at AS DATE) AS cycle_time_days
-    FROM read_csv_auto('data/issues.csv')
+    FROM read_csv_auto('priority-resolution-analysis/data/issues.csv')
     WHERE resolved_at IS NOT NULL
 )
 
