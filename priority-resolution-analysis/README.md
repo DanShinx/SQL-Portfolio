@@ -27,11 +27,19 @@ Metrics are evaluated using:
 
 Averages are avoided due to skew from long-running outliers.
 
-## Initial Insight (Example)
--
+## How to run the analysis
 
-## How to Run
--
+This project uses **DuckDB** to execute analytical SQL directly on CSV files
+(no database setup required).
+
+### Prerequisites
+- DuckDB installed locally
+
+### Install DuckDB
+
+**macOS**
+```bash
+brew install duckdb
 
 Author: Daniel Longman
 Last Update: 2025-12-26 [2026-01-02]
